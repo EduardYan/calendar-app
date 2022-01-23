@@ -1,0 +1,25 @@
+/*
+ * Styles for the invalid month
+ * page
+*/
+
+
+footer {
+  margin-top: 20%;
+}
+
+@media(max-width: 700px) {
+  footer {
+    margin-top: 40%;
+
+  }
+
+}
+
+@media(max-width: 500px) {
+  footer {
+    margin-top: 63.5%;
+
+  }
+
+}

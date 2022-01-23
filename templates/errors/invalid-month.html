@@ -1,0 +1,15 @@
+<!-- PAGE IN CASE INVALIDATE
+  MONTH -->
+
+{% extends 'layout.html' %}
+
+{% block content %}
+<!-- CUSTOM STYLE -->
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/invalid-month.css') }}">
+
+<p class="text-white text-center my-5 lead">
+The month is invalid. 
+<a class="btn btn-secondary mx-3" href="{{ url_for('months.home') }}">Try Againg.</a>
+</p>
+
+{% endblock %}

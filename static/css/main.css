@@ -1,0 +1,23 @@
+/*
+ * Main Styles
+*/
+
+
+body {
+  background-color: #232323;
+}
+
+
+/* CONTAINER */
+.container {
+  margin: 0 auto 10rem auto;
+
+}
+
+/* INFO */
+.info {
+  border-radius: .7rem;
+  margin: 5rem 0;
+}
+
+

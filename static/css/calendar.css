@@ -1,0 +1,120 @@
+/*
+ * Styles for the calendar
+*/
+
+
+/* TITLES */
+.month {
+  font-size: 1.5rem;
+
+}
+
+/* CALENDAR */
+.view-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* seven columns */
+  gap: .5rem;
+
+}
+
+.weekday,
+.day,
+.null {
+  /* animation */
+  animation-name: changeColor;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in;
+
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #111;
+    transform: translateX(10%);
+
+  }
+
+  50% {
+    background-color: #222;
+    transform: translateY(20%);
+
+  }
+
+  100% {
+    background-color: #333;
+    transform: translateY(30%);
+
+  }
+
+}
+
+.weekday,
+.day {
+  border: .1px solid #000;
+
+}
+
+.weekday {
+  transition: background-color .3s ease;
+
+}
+
+.weekday:hover {
+  cursor: pointer;
+  background-color: #3333ff;
+
+}
+
+/* ESPECIALS WEEKDAYS */
+.especial:hover {
+  cursor: pointer;
+  background-color: #aaffaa;
+
+}
+
+/* FOR EACH DAY */
+.day {
+  transition: background-color .3s ease;
+}
+
+
+.day:hover {
+  cursor: pointer;
+  background-color: #6666ff;
+}
+
+/* NULL VALUES */
+.null {
+  background-color: #666; 
+}
+
+.null:hover {
+  cursor: pointer;
+  background-color: #888;
+
+}
+
+.buttons-view {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+
+}
+
+.buttons-view a {
+  width: 100%;
+
+}
+
+/* 700pixels */
+/* @media(max-width: 700px) {
+
+}
+*/
+
+
+/* 500pixels */
+/*@media(max-width: 500px) {
+
+}
+*/

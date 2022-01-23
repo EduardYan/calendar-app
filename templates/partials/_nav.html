@@ -1,0 +1,15 @@
+<!-- NAVIGATION TO USE -->
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/nav.css') }}">
+<nav class="navbar p-0">
+  <ul class="navbar-left">
+    <li class="my-5 ms-5">
+      <a class="display-4 text-white" href="{{ url_for('months.home') }}">Calendar 2022</a>
+      <hr class="text-white">
+    </li>
+  </ul>
+  <ul class="navbar-right">
+    <li>
+      <a class="text-white" href="{{ url_for('months.about') }}">About</a>
+    </li>
+  </ul>
+</nav>

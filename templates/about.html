@@ -1,0 +1,14 @@
+<!-- ABOUT PAGE -->
+{% extends 'layout.html' %}
+
+{% block content %}
+<!-- CUSTOM STYLE -->
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/about.css') }}">
+<h1 class="my-5 text-center text-white">About</h1>
+
+<div class="bg-primary p-4 mx-auto about-view">
+  <p class="text-center">This is a web application for watch the calendar from 2022</p>
+</div>
+
+
+{% endblock %}

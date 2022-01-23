@@ -1,0 +1,4 @@
+# some ignores
+__pycache__
+*.pyc
+test

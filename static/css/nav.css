@@ -1,0 +1,59 @@
+/*
+ *
+ * Styles for the navigation
+*/
+
+.navbar {
+  background-color: #111;
+
+}
+
+.navbar-left,
+.navbar-right {
+  padding-left: 0;
+
+}
+
+
+.navbar-left li,
+.navbar-right li {
+  list-style: none;
+
+}
+
+.navbar-left li a {
+  text-decoration: none;
+
+}
+
+.navbar-left li hr {
+  display: none; /* hr no show */
+}
+
+.navbar-right li {
+  margin-right: 7rem;
+
+}
+
+/* auto ajust in 700pixels */
+
+
+/* 500pixels */
+@media(max-width: 500px) {
+  .navbar-left {
+    margin-left: 1rem;
+
+  }
+
+  .navbar-right li {
+    display: block;
+    margin: 0 9rem;
+
+  }
+
+  .navbar-left li hr {
+    display: block;
+
+  }
+
+}

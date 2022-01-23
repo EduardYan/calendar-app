@@ -1,0 +1,49 @@
+/*
+ * Styles for the about page
+*/
+
+h1 {
+  font-weight: lighter;
+
+}
+
+.about-view {
+  transition: opacity .3s ease;
+  width: 50%;
+}
+
+.about-view:hover {
+  opacity: .8;
+
+}
+
+
+.about-view p {
+  font-size: 1.2rem;
+
+}
+
+/* 900 700 500 */
+@media(max-width: 900px) {
+  .about-view {
+    width: 100%;
+
+  }
+
+}
+
+@media(max-width: 700px) {
+  .about-view {
+    width: 100%;
+
+  }
+
+}
+
+@media(max-width: 500px) {
+  .about-view {
+    width: 100%;
+
+  }
+
+}

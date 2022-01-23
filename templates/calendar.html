@@ -1,0 +1,62 @@
+<!-- PAGE FOR EACH CALENDAR -->
+{% extends 'layout.html' %}
+
+{% block content %}
+<!-- CUSTOM STYLE -->
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/calendar.css') }}">
+<p class="text-warning text-center my-5 month">{{ month.name }}</p>
+
+<section class="text-center mb-3 view-calendar">
+  <div class="lead text-white py-2 weekday">
+    Monday
+  </div>
+  <div class="lead text-white py-2 weekday">
+    Tuesday
+  </div>
+  <div class="lead text-white py-2 weekday">
+    Wednesday
+  </div>
+  <div class="lead text-white py-2 weekday">
+    Thursday
+  </div>
+  <div class="lead text-white py-2 weekday">
+    Friday
+  </div>
+  <div class="lead text-white py-2 weekday especial">
+    Saturday
+  </div>
+  <div class="lead text-white py-2 weekday especial">
+    Sunday
+  </div>
+
+  <!-- VALIDATING IF THERE ARE A MONT FOR SHOW -->
+  {% if month %}
+    {% for week in month.weeks %}
+        {% for day in week %}
+          <!-- VALIDATING IF THE DAY IS NULL -->
+          {% if day == 0 %}
+            <div class="null"></div>
+          {% else %}
+            <div class="text-info py-3 day">{{ day }}</div>
+          {% endif %}
+
+        {% endfor %}
+    {% endfor %}
+
+  {% else %}
+    <p class="text-start text-white">Not month for show</p>
+  {% endif %}
+</section>
+
+
+<!-- BUTTONS VIEW -->
+<div class="mt-1 mb-4 p-3 buttons-view"></div>
+
+
+<!-- INFO -->
+<div class="bg-dark p-3 w-100 info">
+  <p class="text-justify text-white">Some text as information about the calendar.</p>
+  <button class="btn btn-secondary my-3">Learn More</button>
+</div>
+
+{% endblock %}

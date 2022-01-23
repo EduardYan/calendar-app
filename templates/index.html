@@ -1,0 +1,75 @@
+<!-- HOME PAGE -->
+{% extends 'layout.html' %}
+
+
+{% block content %}
+<!-- STYLE -->
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/view.css') }}">
+
+<p class="text-white my-5 text-center lead">Visit a Month for watch a calendar.</p>
+
+<!-- MONTHS VIEW -->
+<section class="months-view my-5">
+  <div class="p-2">
+    <p class="text-center my-5">January</p>
+    <a class="btn btn-dark w-100" href="{{ url_for('months.get_month', id = 1) }}">Watch</a>
+  </div>
+
+  <div class="p-2">
+    <p class="text-center my-5">February</p>
+    <a class="btn btn-dark w-100" href="{{ url_for('months.get_month', id = 2) }}">Watch</a>
+  </div>
+
+  <div class="p-2">
+    <p class="text-center my-5">March</p>
+    <a class="btn btn-dark w-100" href="{{ url_for('months.get_month', id = 3) }}">Watch</a>
+  </div>
+
+  <div class="p-2">
+    <p class="text-center my-5">April</p>
+    <a class="btn btn-dark w-100" href="{{ url_for('months.get_month', id = 4) }}">Watch</a>
+  </div>
+
+  <div class="p-2">
+    <p class="text-center my-5">May</p>
+    <a class="btn btn-dark w-100" href="{{ url_for('months.get_month', id = 5) }}">Watch</a>
+  </div>
+  
+  <div class="p-2">
+    <p class="text-center my-5">June</p>
+    <a class="btn btn-dark w-100" href="{{ url_for('months.get_month', id = 6) }}">Watch</a>
+  </div>
+
+  <div class="p-2">
+    <p class="text-center my-5">July</p>
+    <a class="btn btn-dark w-100" href="{{ url_for('months.get_month', id = 7) }}">Watch</a>
+  </div>
+
+  <div class="p-2">
+    <p class="text-center my-5">August</p>
+    <a class="btn btn-dark w-100" href="{{ url_for('months.get_month', id = 8) }}">Watch</a>
+  </div>
+
+  <div class="p-2">
+    <p class="text-center my-5">September</p>
+    <a class="btn btn-dark w-100" href="{{ url_for('months.get_month', id = 9) }}">Watch</a>
+  </div>
+
+  <div class="p-2">
+    <p class="text-center my-5">October</p>
+    <a class="btn btn-dark w-100" href="{{ url_for('months.get_month', id = 10) }}">Watch</a>
+  </div>
+
+  <div class="p-2">
+    <p class="text-center my-5">November</p>
+    <a class="btn btn-dark w-100" href="{{ url_for('months.get_month', id = 11) }}">Watch</a>
+  </div>
+
+  <div class="p-2">
+    <p class="text-center my-5">December</p>
+    <a class="btn btn-dark w-100" href="{{ url_for('months.get_month', id = 12) }}">Watch</a>
+  </div>
+
+</section>
+
+{% endblock %}

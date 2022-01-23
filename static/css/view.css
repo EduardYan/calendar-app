@@ -1,0 +1,47 @@
+/*
+ * Styles for the view of
+ * months
+*/
+
+/* MONTHS VIEW */
+.months-view {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  row-gap: 2rem;
+
+}
+
+/* FOR EACH CARD FOR THE MONTH */
+.months-view div {
+  background-color: #6666ff;
+  transition: opacity .3s ease;
+
+}
+
+.months-view div:hover {
+  opacity: .8;
+
+}
+
+.months-view div  p {
+  color: #eee;
+
+}
+
+/* 700pixels */
+@media(max-width: 700px) {
+  .months-view {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+
+}
+
+/* 500pixels */
+@media(max-width: 500px) {
+  .months-view {
+    grid-template-columns:  1fr;
+  }
+
+}

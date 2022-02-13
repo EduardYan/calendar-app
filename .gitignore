@@ -1,5 +1,5 @@
 # ignore the virtual enviroments
-env
+myenv
 
 # ignore cache from python
 __pycache__

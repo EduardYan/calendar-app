@@ -18,7 +18,7 @@ body {
 }
 
 /* CONTAINER */
-.container {
+#principal-wrapper {
   margin: 0 auto 10rem auto;
 }
 

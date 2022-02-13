@@ -19,7 +19,7 @@
     </header>
 
     <!-- CONTAINER -->
-    <div class="container">
+    <div class="container" id="principal-wrapper">
       {% block content %}
       {% endblock %}
     </div>
@@ -29,6 +29,7 @@
     {% include 'partials/_footer.html' %}
 
     <!-- SCRIPTS  -->
+    <script src="{{ url_for('static', filename = 'js/bootstrap.bundle.min.js') }}" type="module"></script>
     <script src="{{ url_for('static', filename = 'js/app.js') }}" type="module"></script>
 
   </body>

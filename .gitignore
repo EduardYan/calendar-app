@@ -1,4 +1,9 @@
-# some ignores
+# ignore the virtual enviroments
+env
+
+# ignore cache from python
 __pycache__
 *.pyc
+
+# carpet for test
 test
